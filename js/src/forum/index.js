@@ -5,20 +5,27 @@ import IndexPage from 'flarum/components/IndexPage';
 import Button from 'flarum/components/Button';
 import LinkButton from 'flarum/components/LinkButton';
 import NavItem from 'flarum/components/nav-item';
+import MessageButton from './components/MessageButton';
 
 app.initializers.add('ejin/ejin-custom', () => {
   extend(HeaderSecondary.prototype, 'items', function(items) {
     if (!app.session.user || !app.forum.attribute('canSaveDrafts')) return;
+    // items.add(
+    //   'message',
+    //   LinkButton.component({
+    //     icon: 'fas fa-envelope',
+    //     label: 'Messages',
+    //     href: '/u/' + app.session.user.data.attributes.username + '/byobu',
+    //     className: 'Button Button--icon Button--link Button-emojionearea',
+    //   }),
+    //   20
+    // );
+
     items.add(
       'message',
-      LinkButton.component({
-        icon: 'fas fa-envelope',
-        title: 'Messages',
-        href: '/u/' + app.session.user.data.attributes.username + '/byobu',
-        className: 'Button Button--icon Button--link Button-emojionearea',
-      }),
-      20
-    );
+      <MessageButton/>,
+      10
+    )
   });
 
   extend(IndexPage.prototype, 'navItems', function (items) {
