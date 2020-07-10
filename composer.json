@@ -1,0 +1,37 @@
+{
+  "name": "ejin/ejin-custom",
+  "description": "A set of single forum specific styling.",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^0.1.0-beta.8"
+  },
+  "authors": [
+    {
+      "name": "John Sims",
+      "email": "john@ejincollective.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ejin\\EjinCustom\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "eJin Custom",
+      "icon": {
+        "name": "",
+        "backgroundColor": "",
+        "color": ""
+      }
+    },
+    "flagrow": {
+      "discuss": ""
+    }
+  }
+}
