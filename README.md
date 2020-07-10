@@ -1,5 +1,7 @@
 # eJin Custom
 
+Custom features for Tees & Coins.
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/ejin/ejin-custom.svg)](https://packagist.org/packages/ejin/ejin-custom)
 
 A [Flarum](http://flarum.org) extension. A set of single forum specific styling.
