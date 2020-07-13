@@ -8,7 +8,7 @@ export default class MessageButton extends NotificationsDropdown {
           <a href={userUrl}>
             <button class="Button Button--flat" title="Messages">
               <i class="icon fas fa-envelope Button-icon"></i>
-              <span class="Button-label">Messages</span>
+              <span class="Button-label">Private Messaging</span>
             </button>
           </a>
         </div>

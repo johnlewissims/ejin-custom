@@ -37,7 +37,7 @@ app.initializers.add('ejin/ejin-custom', () => {
         LinkButton.component({
           icon: 'fas fa-envelope',
           label: 'Messages',
-          text: 'Messages',
+          text: 'Private Messaging',
           href: '/u/' + app.session.user.data.attributes.username + '/byobu',
           className: 'Button Button--icon Button--link Button-emojionearea',
         }),
